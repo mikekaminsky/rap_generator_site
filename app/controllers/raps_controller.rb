@@ -1,10 +1,7 @@
 class RapsController < ApplicationController
 
-  def index
-  end
-
-  def show
-
+  def new
+    render json: {lyrics: Freestyle.new.text}
   end
 
 end
