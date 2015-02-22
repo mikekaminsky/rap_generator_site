@@ -7,8 +7,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body ng-view>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">
+          Freestyle Me <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+        </a>
+      </div>
+    </div>
+  </nav>
 
-<div ng-app='rapGenerator'>
+<div class='container' ng-app='rapGenerator'>
   <%= yield %>
 </div>
 
