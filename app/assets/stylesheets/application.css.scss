@@ -25,6 +25,13 @@ body {
     &:hover {
       color: $electric-green;
     };
+    &:visited {
+      color: $electric-purple;
+      text-decoration: none !important;
+      &:hover {
+        color: $electric-green;
+      };
+    };
   }
 }
 
