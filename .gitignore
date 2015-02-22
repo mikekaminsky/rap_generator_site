@@ -16,4 +16,5 @@
 /tmp
 .env
 **/*.swp
+**/*.swo
 /config/database.yml
