@@ -14,5 +14,18 @@
  *= require_self
  */
 
+@import "constants";
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+body {
+  background-color: $black;
+  a{
+    color: $electric-purple;
+    &:hover {
+      color: $electric-green;
+    };
+  }
+}
+
+

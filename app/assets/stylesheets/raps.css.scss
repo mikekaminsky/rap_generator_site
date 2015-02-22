@@ -1,3 +1,10 @@
 .lyric{
-  text-align:center
+  text-align:center;
+  a{
+    line-height: 36px;
+
+    &:hover {
+      font-size: 25px;
+    }
+  }
 }
