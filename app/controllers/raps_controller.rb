@@ -1,7 +1,7 @@
 class RapsController < ApplicationController
 
   def new
-    render json: {lyrics: Freestyle.new.text}
+    render json: {stanzas: Freestyle.new.stanzas}
   end
 
 end

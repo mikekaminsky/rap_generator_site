@@ -1,5 +1,8 @@
 <div ng-controller='rapController'>
-  <p class='lyric' ng-repeat="lyric in lyrics">
-  <a target="_blank" href="{{lyric.song_url}}">{{ lyric.text }}</a>
-  </p>
+  <div ng-repeat="stanza in stanzas">
+    <p class='lyric' ng-repeat="lyric in stanza.lyrics">
+      <a target="_blank" href="{{lyric.song_url}}">{{ lyric.text }}</a>
+    </p>
+    <br/>
+  </div>
 </div>

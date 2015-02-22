@@ -2,7 +2,9 @@ class Lyric < ActiveRecord::Base
   belongs_to :song
 
   def self.random(count = 1)
-    order('RANDOM()').first(count)
+    uncached do
+      order('RANDOM()').first(count)
+    end
   end
 
     
