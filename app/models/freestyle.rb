@@ -10,7 +10,11 @@ class Freestyle
 
   def text
     lyrics.flatten.collect do |item|
-      item.lyrics
+      {text: item.lyrics, 
+       song_name: item.song.title,
+       song_artist: item.song.artist,
+       song_url: item.song.url
+      }
     end
   end
 

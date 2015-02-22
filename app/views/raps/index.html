@@ -1,5 +1,5 @@
 <div ng-controller='rapController'>
   <p class='lyric' ng-repeat="lyric in lyrics">
-    {{ lyric }}
+  <a target="_blank" href="{{lyric.song_url}}">{{ lyric.text }}</a>
   </p>
 </div>
