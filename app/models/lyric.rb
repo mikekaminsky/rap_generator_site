@@ -7,10 +7,8 @@ class Lyric < ActiveRecord::Base
     end
   end
 
-    
   def random_rhyme
     Lyric.order('RANDOM()')
-      .where("rhymesyls = ? AND lastword != ?", rhymesyls, lastword)
-      .first
+      .where("rhymesyls = ?  AND lower(lastword) != lower(?)", rhymesyls, lastword).first
   end
 end
